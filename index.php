@@ -97,7 +97,7 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
                             <a class="nav-link" href="#anggota">Keanggotaan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#team">Event</a>
+                            <a class="nav-link" href="#event">Event</a>
                         </li>
                     </ul>
                 </div>
@@ -186,7 +186,7 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
             <div class="container-fluid p-5">
                 <div class="row pb-4">
                     <div class="col-md-12">
-                        <h2 class="text-center">KEEANGGOTAAN</h2>
+                        <h2 class="text-center">KEANGGOTAAN</h2>
                         <hr size="10" width="100">
                     </div>
                 </div>
@@ -218,7 +218,7 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
             <div class="container-fluid p-5">
                 <div class="row pb-4">
                     <div class="col-md-12">
-                        <h2 class="text-center">Event-Event</h2>
+                        <h2 class="text-center">Event</h2>
                         <hr size="10" width="100">
                     </div>
                 </div>
