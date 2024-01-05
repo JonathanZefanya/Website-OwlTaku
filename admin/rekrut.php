@@ -224,7 +224,7 @@ if (isset($_POST['nilai'])) {
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-                Copyright &copy; 2022 ORGANISASIKITA. Designed and Developed by <a href="https://www.linkedin.com/in/agung-dwi-sahputra-36b25a17">Agung Dwi Sahputra</a>.
+            Copyright &copy; 2023 OWLTAKU. Designed and Developed by <a href="https://github.com/JonathanZefanya">Jonathan Natannael Zefanya</a>.
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

@@ -317,7 +317,7 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
             </div>
             <div class="row text-center">
                 <div class="col-12">
-                    <span>Copyright &copy; 2022 | ORGANISASIKITA</span>
+                Copyright &copy; 2023 OWLTAKU. Designed and Developed by <a href="https://github.com/JonathanZefanya">Jonathan Natannael Zefanya</a>.
                 </div>
             </div>
         </div>
