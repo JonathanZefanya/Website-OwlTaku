@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Jan 2024 pada 09.19
+-- Waktu pembuatan: 14 Jan 2024 pada 12.58
 -- Versi server: 8.2.0
 -- Versi PHP: 8.2.4
 
@@ -42,6 +42,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`nim`, `nama`, `prodi`, `no_telp`, `alamat`, `username`, `password`) VALUES
+('1151800035', 'Yukis Milalino Putra', 'Teknik Informatika', '0812-1336-5931', 'Perum Dekat ITI', 'Timester', 'Timester'),
 ('1152200022', 'Danardi Listyono', 'Teknik Informatika', '0851-5944-1960', 'Ciseeng', 'Ra', 'RaDragon'),
 ('1152200024', 'Jonathan Natannael Zefanya', 'Teknik Informatika', '083807914090', 'Tangerang Selatan', 'xead', 'xead0016');
 
@@ -66,9 +67,9 @@ CREATE TABLE `anggota` (
 --
 
 INSERT INTO `anggota` (`nim`, `nama`, `prodi`, `no_telp`, `alamat`, `jabatan`, `thn_jabat`) VALUES
-('12190604721', 'Khalid Fadilah', 'Sistem Informasi', '085612452321', 'Samarinda', 'Sekretaris', '2020'),
-('20200803069', 'Adriel', 'Sistem Informasi', '086152421625', 'Padang', 'Divisi Intelent', '2020'),
-('20200803125', 'Agung Dwi Sahputra', 'Sistem Informasi', '082110860615', 'Perum Bumi Cikampek Baru cc2 No.13 Rt.08 Rw.07 Desa Balonggandu, Kec. Jatisari, Kab. Karawang', 'Divisi PSDM', '2022');
+('1151800017', 'Yukis Milalino Putra', 'Teknik Informatika', '086152421625', 'Pamulang', 'Wakil Ketua', '2019'),
+('1152200052', 'Axel Pratama Putra', 'Teknik Informatika', '082110860615', 'Pamulang', 'Ketua Owltaku', '2020'),
+('1211900019', 'Deriantaka', 'Teknik Industri', '085612452321', 'Pamulang', 'All Role', '2020');
 
 -- --------------------------------------------------------
 
@@ -91,13 +92,6 @@ CREATE TABLE `reqruitment` (
   `status` enum('Tidak Lolos','Lolos') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data untuk tabel `reqruitment`
---
-
-INSERT INTO `reqruitment` (`nim`, `nama`, `prodi`, `no_telp`, `alamat`, `hobi`, `sertifikat_organisasi`, `pengalaman_organisasi`, `motivasi`, `nilai`, `nilai_akhir`, `status`) VALUES
-(1152200010, 'Matthew TirtaWidjaja', 'Teknik Informatika', '083807914090', 'Gunung Sindur', 'Gaming', '_e75cacfa-7134-44fb-ab73-64f9d879b560.jpeg', '_2561b791-ec73-4f37-bd7f-718547fa6278.jpeg', 'Saya suka jepang\r\n', 10, 3, 'Tidak Lolos');
-
 -- --------------------------------------------------------
 
 --
@@ -116,14 +110,6 @@ CREATE TABLE `tb_event` (
   `link_daftar` text NOT NULL,
   `status` enum('belum','selesai') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data untuk tabel `tb_event`
---
-
-INSERT INTO `tb_event` (`kode_event`, `nama_event`, `tema_event`, `pemateri`, `deskripsi`, `waktu`, `tanggal`, `tempat`, `link_daftar`, `status`) VALUES
-(202212001, 'Webinar Implementasi ERP pada UMKM', 'IMPLEMENTASI ERP UNTUK PELAKU UMKM', 'Bpk. Yulhendri , ST, M.T|Dr. Ir. Agung Terminanto, MBA, IPM, CEL, CEA', 'Enterprise Resource Planning (ERP) adalah suatu sistem yang sering digunakan oleh\r\nperusahaan dan sangat dibutuhkan di segala sektor pada jaman modern ini. Dimana ERP dapat\r\nmemberikan efektifitas dan efisiensi bagi suatu perusahaan disegala bidang yang ada pada\r\nperusahaan itu. ERP dapat digunakan sebagai salah satu opsi dalam memecahkan suatu masalah\r\nuntuk sebuah perusahaan dengan bisnis yang memiliki kompleksitas yang rumit. Dengan\r\nmenggunakan sistem ERP, diharapkan agar suatu perusahaan dapat mengatur data dan informasi\r\ndengan skala yang banyak dan besar untuk nantinya dapat diolah dan diatur sesuai dengan\r\nkebutuhan perusahaan.\r\nSesuai dengan fakta-fakta yang ada, maka tidak diragukan lagi bahwa sistem ERP sendiri\r\nmenjadi suatu sistem yang sangat dibutuhkan oleh perusahaan-perusahaan untuk melakukan\r\nintegrasi akan segala bagian yang ada serta setiap proses kegiatan yang ada dalam perusahaan\r\ntersebut. Karena sudah banyak perusahaan besar yang memakai sistem ERP, maka dalam\r\nwebinar kali ini kita akan melakukan sebuah webinar yang bertujuan agar UMKM dapat\r\nmenggunakan sistem tersebut. Seperti kita ketahui bahwa masih banyak permasalahan yang\r\ndialami oleh UMKM yang berdiri dan beroperasi di Indonesia, maka dari itu saya ingin\r\nmelakukan perancangan sistem ERP pada UMKM-UMKM yang ada sehingga para mitra dapat\r\nmencapai target dengan efektif dan efisien, dengan bagaimana para mitra mendapatkan laporan\r\nyang akurat\r\nMaka dari itu, dengan dilakukannya webinar ini bertujuan untuk memudahkan mitra dalam\r\nmemperoleh laporan inventory, transaksi, juga laporan keuangan perusahaan dengan merancang\r\nsistem yang akan dibuat.', '09:00 s/d Selesai', '13 Juli 2022', 'Zoom Meeting', 'https://docs.google.com/forms/d/e/1FAIpQLSdMqEOa5Oc7C85isewakOoy95FtgeP44_vxU5BLCZr8AQxgHQ/viewform', 'belum'),
-(202212006, 'Webinar Big Data', 'Big Data ', 'Salma Hanipah', 'Bebas', '08.00 s/d Selesai', '20 Agustus 2022', 'Monas', 'Link Gform', 'belum');
 
 --
 -- Indexes for dumped tables
@@ -161,7 +147,7 @@ ALTER TABLE `tb_event`
 -- AUTO_INCREMENT untuk tabel `tb_event`
 --
 ALTER TABLE `tb_event`
-  MODIFY `kode_event` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202212007;
+  MODIFY `kode_event` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202212009;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
