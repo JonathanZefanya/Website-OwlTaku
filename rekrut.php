@@ -273,7 +273,7 @@ if (isset($_POST['kirim'])) {
                                     <div class="col-md-6 px-3">
                                         <div class="email-repeater form-group">
                                             <div data-repeater-list="sertifikat_organisasi">
-                                                <label for="sertifikat_organisasi">Sertifikat Organisasi Lain (Jika tidak ada, Kosongkan)</label>
+                                                <label for="sertifikat_organisasi">Sertifikat Organisasi Lain</label>
 
                                                 <div data-repeater-item class="row m-b-15">
                                                     <div class="col-md-10">
@@ -296,7 +296,7 @@ if (isset($_POST['kirim'])) {
                                         </div>
                                         <div class="email-repeater form-group">
                                             <div data-repeater-list="pengalaman_organisasi">
-                                                <label for="pengalaman_organisasi">Sertifikat Prestasi (Jika tidak ada, Kosongkan)</label>
+                                                <label for="pengalaman_organisasi">Sertifikat Prestasi</label>
 
                                                 <div data-repeater-item class="row m-b-15">
                                                     <div class="col-md-10">

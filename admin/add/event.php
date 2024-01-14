@@ -21,7 +21,7 @@ if (isset($_POST['tambah'])) {
     }
     // =====================================
 
-    $Update_Event = mysqli_query($koneksi, "INSERT INTO tb_event VALUES ('','$nama_event','$tema_event','$pemateri','$deskripsi','$waktu','$tanggal','$tempat','$link_daftar','belum')");
+    $Update_Event = mysqli_query($koneksi, "INSERT INTO tb_event(nama_event,tema_event,pemateri,deskripsi,waktu,tanggal,tempat,link_daftar,status) VALUES ('$nama_event','$tema_event','$pemateri','$deskripsi','$waktu','$tanggal','$tempat','$link_daftar','belum')");
     if ($Update_Event) {
         setcookie("success", "Data Berhasil di TAMBAH", time() + 2, '/');
         header("Location:../event.php");

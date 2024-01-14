@@ -91,7 +91,7 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
+                            <a class="nav-link" href="#about">Pendaftaran</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#anggota">Pengurus</a>
@@ -127,11 +127,11 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
                     <div class="col-md-6 text-light">
                         <h1>OWLTAKU</h1>
                         <h5>Sistem Informasi UKM Owltaku</h5>
-                        <p>Tugas besar mengenai pengelolaan organisasi. Bertujuan untuk membuat
-                            organisasi lebih terstruktur dan lebih publish, publish selain di sosial
-                            media(Instagram, Facebook, dan Whatsapp).
-                            Fitur unggul yang kita buat (Reqruitment keanggotaan dan pengelolaan timeline
-                            proker)</p>
+                        <p>UKM ITI Jepang Owltaku adalah sebuah wadah yang eksklusif dan dinamis bagi para mahasiswa yang berminat dan memiliki ketertarikan dalam budaya populer Jepang, terutama dalam bidang hiburan, teknologi, dan inovasi. Nama "Owltaku" sendiri menggambarkan keunikan dan keberagaman anggota, yang memiliki semangat keilmuan layaknya burung hantu yang cerdas dan selalu ingin tahu.<br>
+                        <br>Sebagai Unit Kegiatan Mahasiswa (UKM) di lingkungan Institut Teknologi Indonesia (ITI), Owltaku menjadi tempat berkumpulnya mahasiswa yang memiliki minat dalam industri kreatif Jepang. Melalui kegiatan-kegiatan yang diadakan secara berkala, Owltaku berusaha untuk mendukung dan mengembangkan potensi kreativitas anggotanya.<br>
+                        <br>Berbagai kegiatan yang diadakan oleh Owltaku mencakup diskusi, lokakarya, seminar, dan kegiatan sosial lainnya yang berfokus pada berbagai aspek budaya pop Jepang, seperti anime, manga, teknologi, desain, dan musik. Anggota Owltaku memiliki kesempatan untuk berbagi pengetahuan, pengalaman, dan ide-ide inovatif dalam lingkungan yang mendukung pertukaran budaya.<br>
+                        <br>Owltaku juga aktif berpartisipasi dalam event-event kampus maupun di luar kampus, baik sebagai peserta maupun penyelenggara. Dengan semangat kolaborasi, Owltaku berupaya menjembatani divisi teknologi dengan seni dan budaya Jepang, menciptakan kesempatan bagi anggotanya untuk mengembangkan diri secara holistik.
+                        </p>
                         <?php
                         if (isset($_SESSION['nim'])) {
                             echo '<a href="admin/"><button class="btn btn-light px-5 py-2 mt-3">Dashboard Admin</button></a>';
@@ -158,18 +158,19 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
                 <div class="row">
                     <div class="col-md-5 text-light text-center">
                         <img src="assets/imgs/about.png" alt="About US ORGANISASIKITA" width="350">
-                        <p class="textabout">“Humans create technology, and technology helps humans more”</p>
+                        <p class="textabout">“Bersama Pasti Kita Bisa, <br> Banzai”</p>
                     </div>
                     <div class="col-md-6 ml-5">
-                        <h1>Pengelolaan Organisasi Yang Lebih Terstruktur</h1>
-                        <p class="aboutjudul">Membuat organisasi lebih terstruktur dan lebih publish, publish selain di sosial media(Instagram, Facebook, dan Whatsapp).</p>
+                        <h1>Mari Bergabung!!!</h1>
+                        <p class="aboutjudul">Mari membuat membuat suasana UKM Owltaku lebih meriah lagi.
+                        </p>
 
                         <div class="row">
                             <div class="col-md-2">
                                 <img src="assets/imgs/laptop.png" width="60" class="d-inline-flex">
                             </div>
                             <div class="col-md-10">
-                                <p class="d-inline-flex text-success font-16">Mencapai Tujuan Utama Organisasi Yang Lebih Aktif</p>
+                                <p class="d-inline-flex text-success font-16">Silahkan Daftar Di Bawah Ini</p>
                             </div>
                         </div>
                         <a href="rekrut.php"><button class="btn btn-success mt-4 py-2 px-4">DAFTAR KEANGGOTAAN OWLTAKU</button></a>
@@ -290,19 +291,15 @@ $query_Event = mysqli_query($koneksi, "SELECT * FROM tb_event WHERE status = 'be
                 <div class="col-md-6 p-4">
                     <h1 class="text-info">Kontak Kami</h1>
                     <h1>OWLTAKU</h1>
-                    <p>Tugas besar mengenai pengelolaan organisasi. Bertujuan untuk membuat
-                        organisasi lebih terstruktur dan lebih publish, publish selain di sosial
-                        media(Instagram, Facebook, dan Whatsapp).
-                        Fitur unggul yang kita buat (Reqruitment keanggotaan dan pengelolaan timeline
-                        proker)</p>
+                    <p>Silakan hubungi kami melalui formulir kontak di bawah ini atau langsung melalui alamat email kami. Kami juga aktif di media sosial, jadi jangan ragu untuk mengikuti akun kami dan bergabung</p>
                 </div>
                 <div class="col-md-6 p-4">
                     <h1>THANK <span class="text-info">YOU</span></h1>
                     <h5>Sistem Informasi UKM Owltaku</h5>
                     <div class="row mt-5">
                         <div class="col">
-                            <h5>NO.PHONE</h5>
-                            <span>+62 8??-????-????</span>
+                            <h5>Instagram</h5>
+                            <a href="https://www.instagram.com/owltakuitiofficial?igsh=cWh0MDRuenA4cHB1"><span>@owltakuitiofficial</span></a>
                         </div>
                         <div class="col">
                             <h5>WEBSITE</h5>
