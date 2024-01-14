@@ -44,7 +44,7 @@ if (isset($_POST['edit'])) {
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/imgs/Lingkar_LOGO.png">
-    <title>Edit Keanggotaan | Admin Organisasikita</title>
+    <title>Edit Keanggotaan | Admin Owltaku</title>
     <!-- Custom CSS -->
     <link href="../assets/libs/tablesaw/dist/tablesaw.css" rel="stylesheet">
 

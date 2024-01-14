@@ -10,4 +10,4 @@ Berikut teknologi yang digunakan pada sistem ini: <br>
 
 
 ## Website ini saya kerjakan secara sendiri, yaitu :
-Jonathan Natannael Zefanya (1152200024)
+Jonathan Natannael Zefanya

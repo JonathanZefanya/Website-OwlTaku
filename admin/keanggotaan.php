@@ -37,7 +37,7 @@ if (isset($_GET['hapus'])) {
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/imgs/Lingkar_LOGO.png">
-    <title>Keanggotaan | Admin Organisasikita</title>
+    <title>Keanggotaan | Admin Owltaku</title>
     <!-- Custom CSS -->
     <link href="assets/libs/tablesaw/dist/tablesaw.css" rel="stylesheet">
 

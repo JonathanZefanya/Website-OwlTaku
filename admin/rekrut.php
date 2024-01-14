@@ -42,7 +42,7 @@ if (isset($_POST['nilai'])) {
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/imgs/Lingkar_LOGO.png">
-    <title>Reqruitment | Admin Organisasikita</title>
+    <title>Reqruitment | Admin Owltaku</title>
     <!-- Custom CSS -->
     <link href="assets/libs/tablesaw/dist/tablesaw.css" rel="stylesheet">
 
@@ -169,14 +169,14 @@ if (isset($_POST['nilai'])) {
                                                         <?php
                                                         $exp_Sertif = explode("|", $data_Rekrut['sertifikat_organisasi']);
                                                         for ($i = 0; $i < count($exp_Sertif); $i++) {
-                                                            echo '<img width="100" class="img-rounded d-inline-flex" src="' . $host . 'gambar/sertifikat/' . $exp_Sertif[$i] . '" alt="' . $exp_Sertif[$i] . '"><br>';
+                                                            echo '<img width="100" class="img-rounded d-inline-flex" src="' . $host . 'assets/imgs/sertifikat/' . $exp_Sertif[$i] . '" alt="' . $exp_Sertif[$i] . '"><br>';
                                                         }
                                                         ?></td>
                                                     <td>
                                                         <?php
                                                         $exp_Pengalaman = explode("|", $data_Rekrut['pengalaman_organisasi']);
                                                         for ($i = 0; $i < count($exp_Pengalaman); $i++) {
-                                                            echo '<img width="100" class="img-rounded d-inline-flex" src="' . $host . 'gambar/sertifikat/' . $exp_Pengalaman[$i] . '" alt="' . $exp_Pengalaman[$i] . '"><br>';
+                                                            echo '<img width="100" class="img-rounded d-inline-flex" src="' . $host . 'assets/imgs/sertifikat/' . $exp_Pengalaman[$i] . '" alt="' . $exp_Pengalaman[$i] . '"><br>';
                                                         }
                                                         ?></td>
                                                     <td><?= $data_Rekrut['motivasi'] ?></td>

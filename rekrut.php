@@ -79,10 +79,10 @@ if (isset($_POST['kirim'])) {
             /* ==================================== */
             // Set path folder tempat menyimpan gambarnya
             for ($i = 0; $i < count($_FILES['sertifikat_organisasi']['name']); $i++) {
-                move_uploaded_file($_FILES['sertifikat_organisasi']['tmp_name'][$i]['sertifikat_organisasi'], 'gambar/sertifikat/' . $_FILES['sertifikat_organisasi']['name'][$i]['sertifikat_organisasi']);
+                move_uploaded_file($_FILES['sertifikat_organisasi']['tmp_name'][$i]['sertifikat_organisasi'], 'assets/imgs/sertifikat/' . $_FILES['sertifikat_organisasi']['name'][$i]['sertifikat_organisasi']);
             }
             for ($i = 0; $i < count($_FILES['pengalaman_organisasi']['name']); $i++) {
-                move_uploaded_file($_FILES['pengalaman_organisasi']['tmp_name'][$i]['pengalaman_organisasi'], 'gambar/pengalaman/' . $_FILES['pengalaman_organisasi']['name'][$i]['pengalaman_organisasi']);
+                move_uploaded_file($_FILES['pengalaman_organisasi']['tmp_name'][$i]['pengalaman_organisasi'], 'assets/imgs/pengalaman/' . $_FILES['pengalaman_organisasi']['name'][$i]['pengalaman_organisasi']);
             }
 
             $exp_sertif = explode('|', $sertif);
