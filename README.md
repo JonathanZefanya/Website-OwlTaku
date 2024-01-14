@@ -4,7 +4,7 @@ Website ini adalah website untuk menyelesaikan Kegabutan Saya dalam membuat webs
 ## Teknologi Website Owltaku
 Berikut teknologi yang digunakan pada sistem ini: <br>
 1. Backend: Mandiri <br>
-2. Frontend: Bootstrap (Modul Admin, user (No Login)) dan Solid Theme (Homepage Owltaku) <br>
+2. Frontend: Bootstrap (Modul Admin, user (No Login)) dan Basic Theme (Homepage Owltaku) <br>
 3. Gravatar (Profile User) <br>
 4. Database: MariaDB <br>
 
